@@ -7,7 +7,8 @@ The project was published by Forrest Brazeal.
 
 Architecture ->
 
-![excelidraw](https://github.com/chiragsunny009/CJ-Cloud-Resume-Challenge/assets/129606955/a925f7cd-e4f3-4989-a9f7-b064db6b1273)
+![Untitled-2024-01-16-2138](https://github.com/chiragsunny009/CJ-Cloud-Resume-Challenge/assets/129606955/59d727d6-9f5a-4c02-a209-789608bf4672)
+
 
 
 Link of the final website->
