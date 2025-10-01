@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Chirag Jhamnani</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/png" href="../assets/favicon.png" />
+    <style>
+      body {
+        background-color: #f6f7fb;
+      }
+      .blog-hero {
+        background: linear-gradient(
+            120deg,
+            rgba(0, 0, 0, 0.78),
+            rgba(205, 133, 63, 0.75)
+          ),
+          url("../assets/banner-devops.jpg") center/cover no-repeat;
+        padding: 5rem 0;
+      }
+      .blog-hero .badge {
+        letter-spacing: 2px;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+      .blog-hero h1 {
+        font-size: 3rem;
+      }
+      .blog-card {
+        border: none;
+        border-radius: 1rem;
+      }
+      .blog-card img {
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+      }
+      .blog-badge {
+        background-color: rgba(205, 133, 63, 0.15);
+        color: #cd853f;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+      }
+      .blog-meta {
+        font-size: 0.95rem;
+        color: #6c757d;
+      }
+      .content-list li {
+        margin-bottom: 0.35rem;
+      }
+      .content-section + .content-section {
+        margin-top: 1.75rem;
+      }
+      .blog-btn {
+        background-color: #cd853f;
+        border-color: #cd853f;
+      }
+      .blog-btn:hover {
+        background-color: #b26d30;
+        border-color: #b26d30;
+      }
+      .object-fit-cover {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      .divider {
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(0, 0, 0, 0.1),
+          transparent
+        );
+        margin: 3rem 0;
+      }
+      .highlight-box {
+        background-color: #ffffff;
+        border-radius: 0.75rem;
+        padding: 1.5rem;
+        box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+      }
+      .blog-footer {
+        color: #6c757d;
+      }
+      @media (max-width: 991px) {
+        .blog-card img {
+          border-radius: 1rem 1rem 0 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main id="blog-page">
+      <header class="blog-hero text-light text-center">
+        <div class="container">
+          <span class="badge badge-pill px-3 py-2 text-uppercase font-os"
+            >Blog</span
+          >
+          <h1 class="font-staat text-uppercase mt-3">Projects & Blogs</h1>
+          <p class="lead font-ram mx-auto" style="max-width: 720px">
+            A closer look at the end-to-end cloud and DevOps journeys powering
+            Chirag Jhamnani's portfolio.
+          </p>
+        </div>
+      </header>
+
+      <section class="container py-5">
+        <!-- Cloud Resume Challenge article -->
+        <article class="card blog-card shadow-sm mb-5 overflow-hidden">
+          <div class="row no-gutters align-items-center">
+            <div class="col-lg-5">
+              <img
+                src="../assets/work/19.png"
+                alt="Cloud Resume Challenge"
+                class="img-fluid w-100 h-100 object-fit-cover"
+              />
+            </div>
+            <div class="col-lg-7">
+              <div class="card-body">
+                <span class="badge badge-pill blog-badge mb-3"
+                  >Cloud Architecture</span
+                >
+                <h2 class="card-title font-staat text-uppercase">
+                  Cloud Resume Challenge
+                </h2>
+                <p class="card-text font-ram text-black-50">
+                  An AWS-first implementation of the popular challenge that
+                  blends static web hosting, serverless backends, and
+                  infrastructure as code to showcase production-ready
+                  fundamentals.
+                </p>
+                <ul class="blog-meta list-inline mb-4">
+                  <li class="list-inline-item">
+                    <strong>Focus:</strong> Serverless DevOps
+                  </li>
+                  <li class="list-inline-item">
+                    <strong>Status:</strong> In progress
+                  </li>
+                </ul>
+                <a
+                  class="btn btn-dark blog-btn text-uppercase font-os"
+                  href="https://github.com/chiragsunny009/CJ-Cloud-Resume-Challenge"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View Repository
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="highlight-box content-section">
+          <h3 class="font-staat text-uppercase">Solution Overview</h3>
+          <p class="font-ram text-black-50 mb-3">
+            The resume experience is powered by an AWS stack that keeps the site
+            lightning-fast while tracking visitor engagement in real time.
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="font-os text-uppercase text-muted font-size-16">
+                Core Services
+              </h4>
+              <ul class="content-list list-unstyled font-ram text-black-50">
+                <li>
+                  Amazon S3 with CloudFront for globally cached static hosting.
+                </li>
+                <li>Route 53 for custom domain and SSL termination.</li>
+                <li>
+                  Lambda + API Gateway to update a DynamoDB visitor counter.
+                </li>
+                <li>GitHub Actions for automated deploys.</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h4 class="font-os text-uppercase text-muted font-size-16">
+                Learning Gains
+              </h4>
+              <ul class="content-list list-unstyled font-ram text-black-50">
+                <li>
+                  Hands-on practice with infrastructure as code and CI/CD
+                  pipelines.
+                </li>
+                <li>
+                  Operational insights through logging, monitoring, and cost
+                  governance.
+                </li>
+                <li>
+                  End-to-end delivery mindset from UX to backend automation.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- DevSecOps Netflix Deployment article -->
+        <article class="card blog-card shadow-sm mb-5 overflow-hidden">
+          <div class="row no-gutters align-items-center flex-lg-row-reverse">
+            <div class="col-lg-5">
+              <img
+                src="../assets/work/20.png"
+                alt="DevSecOps Netflix Deployment"
+                class="img-fluid w-100 h-100 object-fit-cover"
+              />
+            </div>
+            <div class="col-lg-7">
+              <div class="card-body">
+                <span class="badge badge-pill blog-badge mb-3">DevSecOps</span>
+                <h2 class="card-title font-staat text-uppercase">
+                  Netflix Deployment Pipeline
+                </h2>
+                <p class="card-text font-ram text-black-50">
+                  A production-style delivery pipeline that combines automated
+                  security scanning, container orchestration, and GitOps for a
+                  Netflix clone application.
+                </p>
+                <ul class="blog-meta list-inline mb-4">
+                  <li class="list-inline-item">
+                    <strong>Focus:</strong> Secure CI/CD
+                  </li>
+                  <li class="list-inline-item">
+                    <strong>Status:</strong> Recently completed
+                  </li>
+                </ul>
+                <a
+                  class="btn btn-dark blog-btn text-uppercase font-os"
+                  href="https://github.com/imran1509/DevSecOps-Project-Netflix-Deployment"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Explore Project
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="highlight-box content-section">
+          <h3 class="font-staat text-uppercase">Pipeline Highlights</h3>
+          <p class="font-ram text-black-50">
+            From code commit to monitored production workload, every stage is
+            automated and instrumented.
+          </p>
+          <ul class="content-list list-unstyled font-ram text-black-50">
+            <li>
+              Local Docker build backed by The Movie Database (TMDB) API for
+              feature testing.
+            </li>
+            <li>
+              Quality gates powered by SonarQube, Trivy, and OWASP
+              Dependency-Check.
+            </li>
+            <li>
+              Jenkins-driven CI/CD that pushes hardened images to Docker Hub and
+              triggers deployments.
+            </li>
+            <li>
+              Kubernetes workloads deployed to Amazon EKS with Argo CD handling
+              GitOps synchronization.
+            </li>
+            <li>
+              Observability stack (Prometheus, Grafana, Node Exporter) for
+              proactive monitoring.
+            </li>
+            <li>
+              Automated clean-up tasks to optimize AWS spend post-deployment.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="blog-footer text-center py-4">
+        <p class="font-ram mb-1">Looking for more?</p>
+        <p class="font-os text-uppercase font-size-16 mb-0">
+          <a class="text-dark" href="../index.html" rel="noopener"
+            >Return to Portfolio</a
+          >
+        </p>
+      </footer>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
