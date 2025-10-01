@@ -29,4 +29,4 @@ Architecture ->
 
 Link of the final website->
 
-https://resume.chiragjhamnani.cloud
+https://chiragdevops.vercel.app
